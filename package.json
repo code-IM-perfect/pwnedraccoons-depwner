@@ -1,0 +1,20 @@
+{
+  "name": "pwnedraccoons-electron",
+  "version": "1.0.0",
+  "description": "An antivirus solution made for PNB hackathon",
+  "homepage": "https://github.com/code-IM-perfect/pwnedraccoons-electron#readme",
+  "bugs": {
+    "url": "https://github.com/code-IM-perfect/pwnedraccoons-electron/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-IM-perfect/pwnedraccoons-electron.git"
+  },
+  "license": "MIT",
+  "author": "codeIMperfect",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

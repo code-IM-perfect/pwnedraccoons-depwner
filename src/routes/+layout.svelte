@@ -3,17 +3,36 @@
 	let { children } = $props();
 
 	import { Navigation } from '@skeletonlabs/skeleton-svelte';
-	import { Settings, House, Logs, ChartNoAxesColumn, ChartSpline } from 'lucide-svelte';
+	import {
+		Settings,
+		House,
+		Logs,
+		ChartNoAxesColumn,
+		ChartSpline,
+		CalendarDays,
+		MenuIcon
+	} from 'lucide-svelte';
+
+	let sidebarExpanded = $state(false);
+
+	let toggleSidebar = () => {
+		sidebarExpanded = !sidebarExpanded;
+		console.log('yoo bhai');
+	};
 </script>
 
 <div class="cont flex h-[100vh]">
-	<Navigation.Rail>
+	<Navigation.Rail expanded={sidebarExpanded}>
 		{#snippet header()}
-			<div
-				class="icon flex aspect-square w-full flex-col items-center justify-center gap-1 rounded-container p-2 hover:preset-filled-surface-50-950"
+			<Navigation.Tile
+				id="sidebarMenuToggleButton"
+				onclick={toggleSidebar}
+				active="hover:preset-filled-surface-50-950"
+				title={sidebarExpanded ? 'Collapse Sidebar' : 'Expand Sidebar'}
+				labelExpanded="Menu"
 			>
-				DePWN
-			</div>
+				<MenuIcon />
+			</Navigation.Tile>
 		{/snippet}
 		{#snippet tiles()}
 			<Navigation.Tile id="0" label="Dash" href="/" labelExpanded="Dashboard">

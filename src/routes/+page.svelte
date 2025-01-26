@@ -4,7 +4,10 @@
 	import { ScanSearch } from 'lucide-svelte';
 </script>
 
-<div class="grid grid-flow-col text-center">
+<svelte:head>
+	<title>DePWNer</title>
+</svelte:head>
+
 	<HomeButton>
 		<ScanSearch />
 		<h3>Run a Scan</h3>

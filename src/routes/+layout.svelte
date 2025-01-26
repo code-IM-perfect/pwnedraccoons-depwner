@@ -16,14 +16,17 @@
 			</div>
 		{/snippet}
 		{#snippet tiles()}
-			<Navigation.Tile id="0" label="Dash" href="/">
+			<Navigation.Tile id="0" label="Dash" href="/" labelExpanded="Dashboard">
 				<House />
 			</Navigation.Tile>
-			<Navigation.Tile id="1" label="Logs" href="/logs">
+			<Navigation.Tile id="1" label="Logs" href="/logs" labelExpanded="Scan Logs">
 				<Logs />
 			</Navigation.Tile>
-			<Navigation.Tile id="2" label="Statistics" href="/stats">
+			<Navigation.Tile id="2" label="Stats" href="/stats" labelExpanded="Statistics">
 				<ChartSpline />
+			</Navigation.Tile>
+			<Navigation.Tile id="3" label="Schedule" href="/schedule" labelExpanded="Schedule">
+				<CalendarDays />
 			</Navigation.Tile>
 		{/snippet}
 		{#snippet footer()}

@@ -4,13 +4,16 @@ This is powered by Electron.js to build a cross platform yet native app for vari
 
 For setting the download env locally-
 
-1. Clone the project locally and go into the cloned directory
+1. Clone the project locally
    ```sh
-   git clone git@github.com:code-IM-perfect/pwnedraccoons-depwner.git && cd pwnedraccoons-depwner
+   # for http clone
+   git clone "https://github.com/code-IM-perfect/pwnedraccoons-depwner.git"
+   # for ssh authentication
+   git clone git@github.com:code-IM-perfect/pwnedraccoons-depwner.git
    ```
 2. Install dependencies contained in `package.json` with npm
    ```sh
-   npm install
+   cd pwnedraccoons-depwner && npm install
    ```
 
 ## Development
